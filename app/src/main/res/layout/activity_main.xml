@@ -23,7 +23,7 @@
 
             <Button
                 android:id="@+id/browse"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                android:layout_marginTop="5dp"
@@ -35,7 +35,7 @@
 
             <Button
                 android:id="@+id/captureCamera"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
@@ -90,7 +90,7 @@
 
             <Button
                 android:id="@+id/upload"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonstyle"
@@ -103,7 +103,7 @@
 
         <Button
             android:id="@+id/viewall"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
             android:background="@drawable/button_view"
