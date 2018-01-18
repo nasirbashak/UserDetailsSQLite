@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/getImages"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher_round"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/getName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Name here"
+
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/getEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Email here"
+
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

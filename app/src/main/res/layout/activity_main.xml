@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.nasirbashak007.usersqlite.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+               android:layout_marginTop="5dp"
+                android:background="@drawable/button_browse"
+                android:onClick="browseImage"
+                android:text="Browse"
+                tools:ignore="HardcodedText,OnClick" />
+
+
+            <Button
+                android:id="@+id/captureCamera"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_browse"
+                android:onClick="launchCamera"
+                android:text="Camera"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/user_image"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3d61e5"
+            android:hint="Enter Your Name"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3d61e5"
+            android:hint="Enter Your Email"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            tools:ignore="HardcodedText,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle"
+                android:onClick="uploadData"
+                android:paddingVertical="0dp"
+                android:text="Upload"
+                tools:ignore="HardcodedText,OnClick" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/viewall"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_view"
+            android:onClick="viewAll"
+            android:text="View All"
+            tools:ignore="HardcodedText,OnClick" />
+    </LinearLayout>
+
+</LinearLayout>
