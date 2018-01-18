@@ -23,7 +23,7 @@
 
             <Button
                 android:id="@+id/browse"
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                android:layout_marginTop="5dp"
@@ -35,7 +35,7 @@
 
             <Button
                 android:id="@+id/captureCamera"
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
@@ -58,7 +58,8 @@
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/name"
@@ -84,16 +85,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/upload"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonstyle"
                 android:onClick="uploadData"
-                android:paddingVertical="0dp"
+
                 android:text="Upload"
                 tools:ignore="HardcodedText,OnClick" />
         </LinearLayout>
@@ -101,7 +103,7 @@
 
         <Button
             android:id="@+id/viewall"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
             android:background="@drawable/button_view"

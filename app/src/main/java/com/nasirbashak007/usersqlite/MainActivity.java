@@ -13,6 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -136,15 +137,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void uploadData(View view) {
 
+        String NAME = name.getText().toString().trim();
+        String EMAIL = email.getText().toString().trim();
 
 
-        if (FLAG == 1 ) {
+        if (FLAG == 1 && NAME.length() >0 && EMAIL.length() > 0) {
 
 
             try {
 
-                String NAME = name.getText().toString().trim();
-                String EMAIL = email.getText().toString().trim();
+
 
                 sqLiteHelper.insertData(NAME, EMAIL, ImageToByteCode(imageView));
 
